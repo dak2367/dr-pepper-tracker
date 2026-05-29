@@ -1,4 +1,4 @@
-const API = 'dr-pepper-tracker-production.up.railway.app'
+const API = 'https://dr-pepper-tracker-production.up.railway.app/api'
 
 async function getDrinks() {
     const response = await fetch(`${API}/drinks`)
