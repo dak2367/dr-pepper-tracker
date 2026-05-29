@@ -1,4 +1,4 @@
-const API = 'http://localhost:3000/api'
+const API = 'dr-pepper-tracker-production.up.railway.app'
 
 async function getDrinks() {
     const response = await fetch(`${API}/drinks`)
