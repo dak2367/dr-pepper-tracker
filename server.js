@@ -13,6 +13,8 @@ app.listen(process.env.PORT || 3000, () => {
 
 const Database = require('better-sqlite3') //works similar to includes in c, will only be available in the scope of the function
 const db = new Database('drpepper.db')
+const path = require('path')
+app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/api/drinks', (req, res) => {
     res.json({ message: 'drinks route works!' })
